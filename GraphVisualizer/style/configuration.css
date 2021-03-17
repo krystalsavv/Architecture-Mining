@@ -1,0 +1,36 @@
+
+#config {
+    display: inline-block;
+    vertical-align: top; 
+    position: absolute;
+    right: 0; 
+    width: 24vw;
+    height: 99vh;   
+    margin: 0.1vw;
+    background-color: rgb(235, 235, 235); 
+    border-style: solid; 
+    border-radius: 0.15vw;
+    border-width: 0.15vw;
+    border-color: rgba(24, 85, 164, .3);
+    box-shadow: 0 0 1vw rgba(34, 36, 38,.2);
+  } 
+  
+  #configTitle {
+    /* text-align: center; */
+    color: rgb(234, 238, 255);
+    background-color: rgb(24, 85, 164);
+    padding: 1vh; 
+    padding-left: 0.5rem;
+    margin: 0;
+    border-bottom:  0.2vw solid rgba(24, 85, 164, 0.6);
+  }
+  
+  #configData {
+    height: 92.3vh; 
+    overflow: auto;
+    padding-bottom: .5rem;
+  }
+  
+  .disabledElem {
+    color:grey;
+  }
