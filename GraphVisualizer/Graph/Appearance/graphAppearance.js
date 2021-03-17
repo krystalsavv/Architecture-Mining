@@ -4,7 +4,7 @@ import contextMenu from "./contextMenu.js"
 const $ = go.GraphObject.make;
 
 const diagram =
-  $(go.Diagram, "diagramDiv",
+  $(go.Diagram, "diagram",
     {
       "undoManager.isEnabled": true,
       initialAutoScale: go.Diagram.Uniform,  // an initial automatic zoom-to-fit

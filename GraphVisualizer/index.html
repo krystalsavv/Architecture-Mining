@@ -17,11 +17,20 @@
 </head>
 
 <body>
-    <div id="diagramDiv"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-8 col-md-9 p-0">
+            <div id="diagram"></div>
+            </div>
 
-    <div id="config">
-        <config-window :data="data"/>
+            <div class="col-4 col-md-3 p-0">
+            <div id="config" >
+                <config-window :data="data"/>
+            </div>
+        </div>
+        </div>
     </div>
+
     <script type="module" src="./Graph/graphCreation.js"></script>
     <script type="module" src="./Graph/Update/grouping.js"></script>
     <script type="module" src="./Graph/Update/updateGraph.js"></script>

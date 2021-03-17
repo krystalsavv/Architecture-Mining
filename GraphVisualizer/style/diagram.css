@@ -1,7 +1,11 @@
-#diagramDiv {
+#diagram {
     display: inline-block;
     position: absolute;
-    width: 75.5vw; 
-    height: 99.5vh;   
+    width: 100%; 
+    height: 100vh;   
     background-color:rgb(221, 225, 227);
-  }  
+}  
+
+#diagram canvas {
+    outline: none;
+}
