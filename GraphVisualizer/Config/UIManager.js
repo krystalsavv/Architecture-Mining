@@ -38,19 +38,6 @@ UIManager.applyChanges = function(event, groupData, applyOnGroupData) {
 
 // ----------------------------------------------------------------------------------
 
-UIManager.collapseCard = function(e) {
-    const button = e.target;
-    button.classList.toggle("active");
-    var content = button.nextElementSibling;
-    if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-    } else {
-        content.style.maxHeight = 4*content.scrollHeight + "px";
-    }
-}
-
-// ----------------------------------------------------------------------------------
-
 UIManager.evalCondition = function(condition) {
     let $currGroup = this.group.data;
     return eval(' ' + condition);

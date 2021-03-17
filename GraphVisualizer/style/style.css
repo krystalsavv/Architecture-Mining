@@ -47,6 +47,7 @@ body{
 #configData {
   height: 92.3vh; 
   overflow: auto;
+  padding-bottom: .5rem;
 }
 
 .disabledElem {
