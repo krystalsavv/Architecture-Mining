@@ -1,5 +1,6 @@
 /* 
     license: https://github.com/warcraft12321/Thesis/blob/master/license 
+    Changes are applied for multi level clustering (Krystallia Savvaki)
 */
 
 // -------------------------------------------- Louvain Algorithm --------------------------------------------

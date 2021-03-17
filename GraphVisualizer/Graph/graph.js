@@ -8,6 +8,9 @@ import { diagram, contextMenu } from "./Appearance/graphAppearance.js"
 function LayoutHolder(goObj, layout = 'ForceDirectedLayout') {
     let go_layout = goObj;
 
+    /**
+     * @param {String} layout 
+     */
     function setLayout(layout) {
         let $ = go.GraphObject.make;
         if (layout === 'PackedLayout') {
@@ -284,21 +287,21 @@ function Graph() {
 
 let graph = new Graph();
 
-function test() {
-    graph.hideNodeByKey("TileColorsHolder");
-    graph.setNodeColorByKey("Value", "red");
-    graph.getEdgesArray().forEach((edgeData) => { graph.hideEdgeByData(edgeData, "red") });
+// function test() {
+//     graph.hideNodeByKey("TileColorsHolder");
+//     graph.setNodeColorByKey("Value", "red");
+//     graph.getEdgesArray().forEach((edgeData) => { graph.hideEdgeByData(edgeData, "red") });
 
-    graph.addNode({
-        key: "TEST NODE!!!",
-        name: "TEST NODE!!!",
-        data: {
-            namespace: "TEST:: ",
-            structureType: "",
-            srcInfo: {}
-        }
-    });
-    graph.setNodeColorByKey("TEST NODE!!!", "blue");
-}
+//     graph.addNode({
+//         key: "TEST NODE!!!",
+//         name: "TEST NODE!!!",
+//         data: {
+//             namespace: "TEST:: ",
+//             structureType: "",
+//             srcInfo: {}
+//         }
+//     });
+//     graph.setNodeColorByKey("TEST NODE!!!", "blue");
+// }
 
 export default graph;

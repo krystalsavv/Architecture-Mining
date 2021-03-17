@@ -1,5 +1,4 @@
 import { diagram } from "../Appearance/graphAppearance.js"
-import louvainCommunities from "../clusteringAlgorithms/louvain.js"
 import jLayeredLabelPropagation from "../ClusteringAlgorithms/layeredLabelPropagation.js"
 import jLouvain from "../clusteringAlgorithms/jlouvain.js"
 import recover from "./groupsRecover.js"
@@ -126,15 +125,6 @@ function groupingByFileName() {
     //recover.groupingBy();
 }
 
-function groupingByLouvainOld() {
-    clusteringAlgorithmsUtils.setClusteringAlgorithmType('louvainOld');
-    clusteringAlgorithmsUtils.graphCleanFromGroups('louvainOld');
-    diagram.model.commit(function (m) {
-        const communities = louvainCommunities(m.nodeDataArray, m.linkDataArray);
-        clusteringAlgorithmsUtils.applyTwoLevelClustering(communities, 'louvainOld');
-    });
-}
-
 function groupingByLouvain(mode = configApplicator.values.louvainMultiLevels) {
     clusteringAlgorithmsUtils.setClusteringAlgorithmType('louvain');
     clusteringAlgorithmsUtils.graphCleanFromGroups('louvain');
@@ -235,7 +225,6 @@ configApplicator.install('groupingBynone', groupingByNone, recover.groupingByNon
 configApplicator.install('groupingBynamespace', groupingByNamespace, recover.groupingBy);
 configApplicator.install('groupingByfileName', groupingByFileName, recover.groupingBy);
 configApplicator.install('groupingBylouvain', groupingByLouvain, recover.groupingBy);
-configApplicator.install('groupingBylouvainOld', groupingByLouvainOld, recover.groupingBy);
 configApplicator.install('louvainMultiLevels', louvainMultiLevels, recover.louvainMultiLevels);
 configApplicator.install('groupingByinfomap', groupingByInfomap);
 configApplicator.install('infomapMultiLevels', infomapMultiLevels, recover.infomapMultiLevels);

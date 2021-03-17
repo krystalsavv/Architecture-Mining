@@ -206,11 +206,6 @@
                             "description": "File",
                             "value": "fileName"
                         },
-                        "louvainOld": {
-                            "id": "louvaiOld",
-                            "description": "Louvain Old",
-                            "value": "louvainOld"
-                        },
                         "louvain": {
                             "id": "louvain",
                             "description": "Louvain",
