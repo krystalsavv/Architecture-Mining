@@ -27,10 +27,13 @@ const nodeContextMenu =
       let part = obj.part.adornedPart;
       let links = part.findLinksConnected();
       while (links.next()) {
-        if (links.value.findObject("LINK").stroke !== '#ff2e9e')
+        if (links.value.findObject("LINK").stroke !== '#ff2e9e'){
           links.value.findObject("LINK").stroke = '#ff2e9e';
-        else
-          links.value.findObject("LINK").stroke = '#555555';
+          links.value.findObject("LINK").strokeWidth = 2;
+        } else {
+          links.value.findObject("LINK").stroke = '#444';
+          links.value.findObject("LINK").strokeWidth =  1.4;
+        }
       }
     }),
     makeButton('Properties', (e, obj) => { alert(nodeProperties(obj.part.adornedPart.data)); })

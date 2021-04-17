@@ -43,14 +43,17 @@ function highlight(depKind) {
   return function () {
     diagram.model.commit(function (m) {
       if (depKind === 'None') {
-        m.linkDataArray.forEach((linkData) => { m.set(linkData, 'color', '#555555'); });
+        m.linkDataArray.forEach((linkData) => { m.set(linkData, 'color', '#444');  m.set(linkData, 'thick', 1.4); });
       }
       else {
         m.linkDataArray.forEach((linkData) => {
-          if (linkData.data.dependencies[depKind] !== undefined)
+          if (linkData.data.dependencies[depKind] !== undefined) {
             m.set(linkData, 'color', 'rgb(71, 128, 236)');
-          else
-            m.set(linkData, 'color', '#555555');
+            m.set(linkData, 'thick', 3);
+          } else {
+            m.set(linkData, 'color', '#444');
+            m.set(linkData, 'thick', 1.4);
+          }
         });
       }
     }, 'highlight');

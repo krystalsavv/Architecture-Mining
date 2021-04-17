@@ -40,9 +40,9 @@ diagram.nodeTemplate =
     $(go.TextBlock,
       "default",
       {
-        margin: 12,
-        stroke: "gray",
-        font: "bold 16px sans-serif"
+        margin: 20,
+        stroke: "#666",
+        font: "500 40px sans-serif"
       },
       new go.Binding("text", "name")),
     {
@@ -83,7 +83,8 @@ diagram.groupTemplate = $(go.Group, "Vertical", { layoutConditions: go.Part.Layo
     {
       alignment: go.Spot.Default,
       margin: 10,
-      font: "Bold 12pt sans-serif",
+      stroke: "#333",
+      font: "500 30pt sans-serif",
       visible: true
     },
     new go.Binding("text", "name")),
@@ -108,8 +109,8 @@ diagram.linkTemplate =
     new go.Binding("visible", "visibleLink"),
     $(go.Shape,                                           // link
       {
-        strokeWidth: 1,
-        stroke: "#555555",
+        strokeWidth: 1.4,
+        stroke: "#444",
         name: "LINK"
       },
       new go.Binding("strokeWidth", "thick"),
@@ -117,8 +118,8 @@ diagram.linkTemplate =
     $(go.Shape,                                           // arrowhead
       {
         toArrow: "standard",
-        stroke: "#555555",
-        fill: "#555555",
+        stroke: "#444",
+        fill: "#444",
         scale: 0.9,
       },
       new go.Binding("stroke", "color").makeTwoWay(),
@@ -133,14 +134,14 @@ diagram.linkTemplate =
       $(go.TextBlock,  // the label text
         {
           textAlign: "center",
-          font: " 10pt helvetica, arial, sans-serif",
+          font: " 20pt helvetica, arial, sans-serif",
           stroke: "#777",
           margin: 4,
           visible: true
         },
         new go.Binding("text", "weight"),
         new go.Binding("visible", "visibleWeight"),
-        new go.Binding("stroke", "color"))
+        new go.Binding("stroke", "color")), 
     ),
     {
       toolTip:
