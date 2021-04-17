@@ -7,7 +7,7 @@
             "data": {
                 "weightFilter": {
                     "id": "weightFilter",
-                    "description": "Filter via Weights",
+                    "description": "Filter by Weight",
                     "type": "slider",
                     "value": 1,
                     "min": 1,
