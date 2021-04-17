@@ -1,5 +1,5 @@
 {
-    "title": "Configurations",
+    "title": "Configuration",
     "groups": {
         "filtering": {
             "id": "filtering",
@@ -54,10 +54,10 @@
                             "description": "Class Template Arguments",
                             "value": "ClassTemplateArg"
                         },
-                        "Inherite": {
-                            "id": "Inherite",
+                        "Inherit": {
+                            "id": "Inherit",
                             "description": "Class Bases",
-                            "value": "Inherite"
+                            "value": "Inherit"
                         },
                         "Friend": {
                             "id": "Friend",
@@ -126,10 +126,10 @@
                             "description": "Class Template Arguments",
                             "value": "ClassTemplateArg"
                         },
-                        "Inherite": {
-                            "id": "Inherite",
+                        "Inherit": {
+                            "id": "Inherit",
                             "description": "Class Bases",
-                            "value": "Inherite"
+                            "value": "Inherit"
                         },
                         "Friend": {
                             "id": "Friend",
@@ -412,13 +412,13 @@
                     },
                     "conditions": {}
                 },
-                "Inherite": {
-                    "id": "Inherite",
+                "Inherit": {
+                    "id": "Inherit",
                     "description": "Class Bases",
                     "type": "subgroup",
                     "data": {
                         "custom": {
-                            "id": "InheriteCustom",
+                            "id": "InheritCustom",
                             "description": "Custom",
                             "type": "checkbox",
                             "value": false,
@@ -434,7 +434,7 @@
                             }
                         },
                         "weight": {
-                            "id": "InheriteWeight",
+                            "id": "InheritWeight",
                             "description": "Weight",
                             "type": "number",
                             "value": 1,
@@ -794,7 +794,7 @@
                             ]
                         },
                         {
-                            "Inherite": [
+                            "Inherit": [
                                 "custom",
                                 "weight"
                             ]
