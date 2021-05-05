@@ -1,3 +1,9 @@
+/*
+    A wrapper over GoJS for graph view interaction and configuration. 
+    For each use see the example (in comments) at the end of this file. 
+*/
+
+
 import { diagram, contextMenu } from "./Appearance/graphAppearance.js"
 
 /*
@@ -286,8 +292,13 @@ function Graph() {
 };
 
 let graph = new Graph();
+export default graph;
 
-// function test() {
+
+/*
+    An example for graph use
+*/
+// function example() {
 //     graph.hideNodeByKey("TileColorsHolder");
 //     graph.setNodeColorByKey("Value", "red");
 //     graph.getEdgesArray().forEach((edgeData) => { graph.hideEdgeByData(edgeData, "red") });
@@ -303,5 +314,3 @@ let graph = new Graph();
 //     });
 //     graph.setNodeColorByKey("TEST NODE!!!", "blue");
 // }
-
-export default graph;

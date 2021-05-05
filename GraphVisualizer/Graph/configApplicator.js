@@ -28,6 +28,11 @@ configApplicator.callWithRecover = function(action, data) {
 
 // ----------------------------------------------------------------------------------
 
+/** 
+ * @param eventName The unique id of the action. It will be used by the observer to fire this action.
+ * @param action The event handler that apply the configuration on graph
+ * @param recoverAction A function that will be called after the end of the action (optional) 
+*/
 configApplicator.install = function (eventName, action, recoverAction) {
     configApplicator.recover[action.name] = recoverAction;
     obs.install(eventName, (data) => {
@@ -37,13 +42,18 @@ configApplicator.install = function (eventName, action, recoverAction) {
     });
 }
 
+
+/** 
+ * @param eventName The unique id of the action that will be uninstalled.
+ */
 configApplicator.uninstall = function (eventName) {
     obs.uninstall(eventName);
 }
 
 // ----------------------------------------------------------------------------------
-
-// Store a configuration Value
+/* 
+    Store a configuration Value
+*/
 configApplicator.storeValue = function(name, value) {
     this.values[name] = value;
 }
