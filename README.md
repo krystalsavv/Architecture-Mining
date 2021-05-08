@@ -3,7 +3,7 @@
 This project aims to provide an architecture mining tool that reconstructs a system software architecture from C++ source code based on program class relationships. 
 The architecture miner consists of two tools: the dependency graph generator, which extracts the dependencies between classes from source code, represents them as a graph and stores them in JSON format, and the graph visualizer, which takes a dependency graph, analyzes it, and renders it, to represent the software architecture of the given system.
 
-This tool was developed for my MCs thesis at Computer Science Department of University of Crete. The thesis is available here: *It will be available very soon.*
+This tool was developed for my master thesis at Computer Science Department of University of Crete. The thesis is available here: *It will be available very soon.*
 
 ## **Dependency Graph Generator**
 ### **Third-party dependencies**
