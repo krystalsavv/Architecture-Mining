@@ -6,7 +6,7 @@ The architecture miner consists of two tools: the dependency graph generator, wh
 This tool was developed for my MCs thesis at Computer Science Department of University of Crete. The thesis is available here: *It will be available very soon.*
 
 ## **Dependency Graph Generator**
-### **Dependencies**
+### **Third-party dependencies**
 * [Clang](https://github.com/llvm/llvm-project)  
 * [JsonCpp](https://github.com/open-source-parsers/jsoncpp)
 
@@ -29,7 +29,7 @@ The graph generator is developed in C++ and the source code can be found in the 
 
 
 ## **Dependency Graph Visualizer**
-### **Dependencies**
+### **Third-party dependencies**
 * [GoJS](https://gojs.net/latest/index.html)
 * [Vue.js](https://vuejs.org/)
 
