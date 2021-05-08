@@ -33,7 +33,7 @@ The graph generator is developed in C++ and the source code can be found in the 
 * [GoJS](https://gojs.net/latest/index.html)
 * [Vue.js](https://vuejs.org/)
 
-The graph visualizer renders the dependency graph and allows the user to configure it.
+The graph visualizer takes the dependency graph in JSON format, renders it, and allows the user to configure it.
 
 ### **Configurations**
 1. Grouping by: 
