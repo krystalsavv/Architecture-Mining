@@ -46,7 +46,7 @@ The graph visualizer takes the dependency graph in JSON format, renders it, and 
 The graph visualizer is developed in JavaScript and the source code can be found in the *Architecture-Mining/GraphVisualizer* directory.
 
 ## **Demo**
-As a case study we use and evaluate the system as a case study, and we specifically apply our method to the dependency graph generator, the part of our project which is implemented in C++.
+As a case study we use and evaluate the system itself, and we specifically apply our method to the dependency graph generator, the part of our project which is implemented in C++.
 In this [video](https://youtu.be/6ejtbZ4LxA4), we demonstrate the capabilities of our tool and compare the results to the system's original conceptual architecture.
 
 ## **Using Architecture Miner**
