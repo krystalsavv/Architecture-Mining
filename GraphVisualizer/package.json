@@ -16,7 +16,7 @@
     "graphology-communities-louvain": "^1.2.0",
     "jquery": "^3.5.1",
     "npm": "^6.14.7",
-    "serve": "^11.3.2",
+    "serve": "^14.1.1",
     "vue": "^2.6.12",
     "webpack": "^4.44.2"
   }
